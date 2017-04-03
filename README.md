@@ -1,4 +1,4 @@
-MAF 01ES | 0pen 1nfrastructre for Emergency Situations
+MAF 01ES | 0pen 1nfrastructure for Emergency Situations
 =============
 
 Open Source Technologies used to create a public Platform/Infrastructure for Emergency Situations.
