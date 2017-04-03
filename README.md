@@ -28,9 +28,9 @@ Future Work
 RoadMap
 -----------
 - 2nd Trimester
-. Design & Development of the OWEM Platform.
-. Design of the ODEM supported devices and the ONEM.
+* Design & Development of the OWEM Platform.
+* Design of the ODEM supported devices and the ONEM.
 - 3rd Trimester
-. Development, Distribution and Installation of ODEM and ONEM Spots.
+* Development, Distribution and Installation of ODEM and ONEM Spots.
 - 4th Trimester
-. Launch of the ONEM & OWEM Services.
+* Launch of the ONEM & OWEM Services.
