@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Astricon</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black-custom.css">
+		<!--<link rel="stylesheet" href="css/print/pdf.css">-->
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Andada" rel="stylesheet">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		
+		<style type="text/css">
+			.alpha60 {
+				/* Fallback for web browsers that doesn't support RGBa */
+				background: rgb(0, 0, 0)!important;
+				/* RGBa with 0.6 opacity */
+				background: rgba(0, 0, 0, 0.6)!important;
+				/* For IE 5.5 - 7*/
+				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)!important;
+				/* For IE 8*/
+				-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"!important;
+				}
+		</style>
+		
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="images/slide1.gif" class="welcome" >
+		
+					<h2><b>Arduino Panic Button<br/> Integrated with VoIP</b></h2>
+					<h3>By Miguel Angel Torres Govea</h3><br/>
+					VoIP/CTI Senior System Administrator<br/> At PriceTravel Holdings<br/>
+					<span class="data-mail">miguel.torres@pricetravel.com - miguel@maf.mx -mafairnet</span>
+				</section>
+				<section data-background="#dddddd">
+					<section data-background="images/nice_servers_pt.jpg">
+						<h2 style="text-align:left;font-size:2.5em;"><b>About me</b></h2>
+						<h3 style="text-align:left;">and my work</h3>
+						<p class="fragment fade-in" style="text-align:left; font-size:0.8em;">Computer Systems Engineer</p>
+						<p class="fragment fade-in" style="text-align:left; font-size:0.8em;">VoIP/CTI Senior Leader <br/>System Administrator<br/> At PriceTravel Holdings</p>
+					</section>
+				</section>
+				<section  data-background="#dddddd">
+					<section data-background="images/problem.jpg">
+						<h2 style="text-align:left;font-size:2em;"><b>Houston we have a problem</b></h2>
+						<h3 style="text-align:left;">Problem to solve</h3>
+					</section>
+					<section data-background="images/delincuencia.jpg">
+						<h2 style="text-align:left;font-size:2em;"><b>The Big Mess</b></h2>
+						<p class="fragment fade-in">Multiple Emergency Situations at Cancun in the last Days</p> 
+						<p class="fragment fade-in">Limited Response by Government Authorities</p>
+						<p class="fragment fade-in">High Costs by Private Sector on Security</p>
+					</section>
+				</section>
+				<section data-background="#dddddd">
+					<section data-background="images/price11.jpg">
+						<h2 style="text-align:left;font-size:2.5em;"><b>Work on a solution</b></h2>
+						<p style="text-align:left;">Give the Power to the Community</p>
+					</section>
+					
+					<section data-background="images/arduino.jpg">
+						<h2 style="text-align:left;font-size:2.5em;"><b>Open Source Hardware</b></h2>
+						<p style="text-align:left;">I.E. Arduino</p>
+					</section>
+					<section data-background="images/arduino_comunity.jpg">
+						<h2 style="text-align:left;font-size:2.5em;"><b>Why Arduino?</b></h2>
+						<p style="text-align:left;" class="fragment fade-in">=> Easy to lean, use & develop</p>
+						<p style="text-align:left;" class="fragment fade-in">=> Big Community Support</p>
+						<p style="text-align:left;" class="fragment fade-in">=> Low Cost Technology</p>
+						<p style="text-align:left;" class="fragment fade-in">=> Big Quantity of Third-Shiedls</p>
+						<p style="text-align:left;" class="fragment fade-in">=> Open Source</p>
+					</section>
+				</section>
+				<section data-background="#dddddd"><!--Cambiar fondo de presentacion-->
+					<section data-background="images/price14.jpg">
+						<h2 style="text-align:left;font-size:2.5em;"><b>MAF 01ES</b></h2>
+						<p style="text-align:left;">0pen 1nfrastructure for Emergency Situations</p>
+						<p style="text-align:left;"><small>Available at <a href="https://github.com/mafairnet/maf01es">https://github.com/mafairnet/maf01es</a></small></p>
+					</section>
+					<section data-background="images/servers.jpg">
+						<h2 style="text-align:left;font-size:2.5em;"><b>What is it?</b></h2>
+						<p style="text-align:left;" class="fragment fade-in">ODEM | Open Devices for Emergency Situations</p>
+						<p style="text-align:left;" class="fragment fade-in">OWEM | Open Webapps for Emergency Situations</p>
+						<p style="text-align:left;" class="fragment fade-in">ONEM | Open Network for Emergency Situations</p>
+						<p style="text-align:left;" class="fragment fade-in">OTEM | Open Telcomm for Emergency Situations</p>
+					</section>
+					<section data-background="images/servers.jpg">
+						<img src="images/syste_arch.png" border="0" style="border:0px;background:none!important; -webkit-box-shadow: none!important; -moz-box-shadow: none!important; box-shadow: none!important;"/>
+						<h3 style="text-align:left;">System Architecture</h3>
+					</section>
+					<section data-background="images/demo.jpg"><!--Cambiar fondo de presentacion-->
+						<h2 style="text-align:left;font-size:2.5em;"><b>Dangerous Demo</b></h2>
+						<p style="text-align:left;">Panic Button integration with VoIP</p>
+					</section>
+					<section data-background="images/code.jpg">
+						<h2 style="text-align:left;font-size:2.5em;"><b>Pythast Web Service</b></h2>
+						<p style="text-align:left;">Python Asterisk Server Manager</p>
+						<p style="text-align:left;"><small>Available at <a href="https://github.com/mafairnet/pythastws">https://github.com/mafairnet/pythastws</a></small></p>
+					</section>
+				</section>
+				<section data-background="images/servers2.jpg">
+					<h2 style="text-align:left;font-size:2.5em;"><b>Future Work</b></h2>
+						<p style="text-align:left;" class="fragment fade-in">=> Data protection</p>
+						<p style="text-align:left;" class="fragment fade-in">=> Community Foundation</p>
+						<p style="text-align:left;" class="fragment fade-in">=> Increase RadioBase Spots</p>
+						<h3 style="text-align:left;" class="fragment fade-in">4 RadioBases Last Trimester 2018 at CUN</h3>
+						<p style="text-align:left;" class="fragment fade-in">Provided by: MAF, Makenai Systems & PriceTravel</p>
+				</section>
+				<section data-background="images/arduinofinal.jpg">
+					<h2 style="text-align:left;font-size:2.5em;"><b>Conclusions</b></h2>
+						<h3 style="text-align:center;" class="fragment fade-in">The next innovation will come from great engineers and scientifics...</h3>
+						<h3 style="text-align:center;" class="fragment fade-in"><b>The next great idea will come from everyday people...</b></h3>
+				</section>
+				<section data-background="images/nice_servers_pt.jpg">
+					<h2 style="font-size:3em;text-align:left;">C'est fini</h2>
+					<h3 style="text-align:left;">Thank you</h3>
+				</section>
+				<section data-background="images/nice_servers_pt.jpg">
+					<h2 style="font-size:5em;text-align:left;">Q&A</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				
+				width: 1024,
+    			height: 800,
+				
+				chart: {
+					defaults: { 
+						global: { 
+							title: { fontColor: "#FFF" }, 
+							legend: {
+								position: "bottom",
+								labels: { fontColor: "#FFF" },
+							},
+							tooltips: {
+								labels: { fontColor: "#FFF" },
+							},
+						}, 
+						scale: { 
+							scaleLabel: { fontColor: "#FFF" }, 
+							gridLines: { color: "#FFF", zeroLineColor: "#FFF", borderDash: ["5","10"] }, 
+							ticks: { fontColor: "#FFF" }, 
+						} 
+					},
+					line: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ], "borderDash": [ [5,10], [0,0] ] }, 
+					bar: { backgroundColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+					pie: { backgroundColor: [ ["rgba(0,0,0,.8)" , "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"] ]},
+					radar: { borderColor: [ "rgba(20,220,220,.8)" , "rgba(220,120,120,.8)", "rgba(20,120,220,.8)" ]}, 
+				},
+				
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/chart/Chart.min.js' },               
+					{ src: 'plugin/chart/csv2chart.js' },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
